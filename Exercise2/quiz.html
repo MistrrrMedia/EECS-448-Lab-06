@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>dumb quiz that's dumb</title>
+		<style>
+			html
+			{
+				font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+				margin: 0;
+				height: 100%;
+				justify-content: center;
+			    align-items: center;
+				display: flex;
+				color: black;
+			    background-color: black;
+			    background-image: url(https://lh3.googleusercontent.com/2jfcSt_JaDKP40KdP5_w5jG4gqUBCi6ynGwCE09owx08GdNe_hkGyzCFVrOM7JLK3MmuTMxEUNWNYur6B864eVFO8Werq98SCwUvKJ7SJVD9geKQY2aei37kMGQ2s2YauKyGYABilmNGtzKPrG75xWk3zk674NFoRmhQuAN5nbOpLFSHNriPc9ZWSmjS6tCYBnnj5ngZGbKz2pAyp76dRAXIKZDPVLrOy5wc502NimWqEzfME8T-r2C3vf8aCojvlVcTfSqv63VaX2eZGgS89H2L8p3DNlywKBmyOLcz3N-TJX7K03GhlxFReTOF90yMF2g1SKZZFIo1IRThhvcXVb1a_MZosrGkQjoNgiNgud7P1WaCehBQnQQqfCVMhHj3knqj0giO4cAIjxqjirw_qHcQ0gTfkHNoau2WrqYzVpRcivCKheMAN1OE-xAdrwxAKjdqcYyxLj2AXEm32KlBUomjavCZhCVJ4r25sGpy6tnjdqL7c_KW2RBzw3zHkqfcZ6C5V6Bmd7FBCByOBpBMR34j9_wwHRtCs8T2iqzQcKp8TnJ-ZQ8h1fbqZBJlC-tTOrFxrAWG9gfEYZA5K2PfseumVzcQ7JKcbkn2VgUnrosdCB28qYNwle9TZ3nrQ-pMXDGZY5HkzLaKDcp6OzxbifiqenaBpvcQtIwNQi52OD8CV15RRvPxEHF9zVr5BcQoEDd-R_mObW-45PzmQmxYjdy8DKc3TjFbearI_JLW9YK21Kpw7hvBytcenbGIpBibn9EadTXn6FHlFFSgMO6Ti9bYEeY-rG0tgZbDiuCxeoSoeWrCvSe9RE7Vo6l7J_CNugSK1AtA7TmFDmQ_QxpjcvY7csM72U_F91reiagILvUWdDhej63lyvMKEjvuY0tWDIHTgfFjqArbnE7ueNoe81ATSx-hkdWw-SyTETtGXIVP=w3364-h2244-no?authuser=0);
+			    background-size: cover;
+    			background-repeat: no-repeat;
+    			background-attachment: fixed;
+			}
+
+			body
+			{
+				display: flex;
+		    	background-color: rgba(255, 255, 255, 0.8);
+		    	justify-content: center;
+		    	max-width: 500px;
+		    	align-items: center ;
+		    	padding: 50px;
+		    	border-radius: 10px;
+
+		    	-webkit-backdrop-filter: saturate(200%) brightness(2) blur(1.5rem);
+     			 -khtml-backdrop-filter: saturate(200%) brightness(2) blur(1.5rem);
+      			   -moz-backdrop-filter: saturate(200%) brightness(2) blur(1.5rem);
+       			    -ms-backdrop-filter: saturate(200%) brightness(2) blur(1.5rem);
+         			 -o-backdrop-filter: saturate(200%) brightness(2) blur(1.5rem);
+            		    backdrop-filter: saturate(200%) brightness(2) blur(1.5rem);
+
+		    	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+
+		    	-webkit-animation: fade_from_bottom ease 0.75s;
+			     -khtml-animation: fade_from_bottom ease 0.75s;
+			       -moz-animation: fade_from_bottom ease 0.75s;
+			        -ms-animation: fade_from_bottom ease 0.75s;
+			         -o-animation: fade_from_bottom ease 0.75s;
+			            animation: fade_from_bottom ease 0.75s;
+			}
+
+			input
+			{
+				vertical-align: top;
+				margin-top: 4px;
+				margin-left: 0px;
+			}
+
+			li
+			{
+				list-style:  none;
+			}
+
+			h1
+			{
+				margin-top: 0;
+			}
+
+			#submit
+			{
+				padding: 10px;
+				width: 100%;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+				background-color: rgb(50, 150, 250);
+				color: white;
+				font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; 
+				font-weight: normal;
+			}
+
+			#smart
+			{
+				padding: 10px;
+				width: 100%;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+				color: white;
+			}
+
+			@keyframes fade_from_bottom
+			{
+			    from
+			    {
+			        transform: translateY(30px);
+			        opacity: 0;
+			    }
+
+			    to
+			    {
+			        transform: translateY(0px);
+			        opacity: 1;
+			    }
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<form action="quiz.php" method="post">
+				<h1>A quiz about everything and nothing.</h1>
+				<h3>Question 1: How many corners do squares have?</h3>
+				<div class="form-group"> 
+					<li>
+						<input type="radio" name="q1" value="1">potentially 7</input>
+					</li>
+					<li>
+						<input type="radio" name="q1" value="2">gotta be 4</input>
+					</li>
+					<li>
+						<input type="radio" name="q1" value="3">definitely 3</input>
+					</li>
+					<li>
+						<input type="radio" name="q1" value="4">solid chance it's 9</input>
+					</li>
+				</div>
+
+				<br/>
+
+				<div class="form-group"> 
+					<h3>Question 2: Rick Astley will never do which of the following:</h3>
+					<li>
+						<input type="radio" name="q2" value="1">give you up</input>
+					</li>
+					<li>
+						<input type="radio" name="q2" value="2">let you down</input>
+					</li>
+					<li>
+						<input type="radio" name="q2" value="3">run around and desert you</input>
+					</li>
+					<li>
+						<input type="radio" name="q2" value="4">all of the above</input>
+					</li>
+				</div>
+
+				<br/>
+
+				<div class="form-group"> 
+					<h3>Question 3: How many licks does it take to get to the center of a Tootsie Pop?</h3>
+					<li>
+						<input type="radio" name="q3" value="1">bite it</input>
+					</li>
+					<li>
+						<input type="radio" name="q3" value="2">a kabillion</input>
+					</li>
+					<li>
+						<input type="radio" name="q3" value="3">8</input>
+					</li>
+					<li>
+						<input type="radio" name="q3" value="4">derf</input>
+					</li>
+				</div>
+
+				<br/>
+
+				<div class="form-group"> 
+					<h3>Question 4: What color is a firetruck?</h3>
+					<li>
+						<input type="radio" name="q4" value="1">clementine</input>
+					</li>
+					<li>
+						<input type="radio" name="q4" value="2">weewooweewoo (blue)</input>
+					</li>
+					<li>
+						<input type="radio" name="q4" value="3">aghhhhh i'm on fire (red)</input>
+					</li>
+					<li>
+						<input type="radio" name="q4" value="4">probably orange</input>
+					</li>
+				</div>
+
+				<br/>
+
+				<div class="form-group"> 
+					<h3>Question 5: Always let your __ win</h3>
+					<li>
+						<input type="radio" name="q5" value="1">tinder match</input>
+					</li>
+					<li>
+						<input type="radio" name="q5" value="2">instrusive thoughts</input>
+					</li>
+					<li>
+						<input type="radio" name="q5" value="3">NyQuil Extra Strength cravings</input>
+					</li>
+					<li>
+						<input type="radio" name="q5" value="4">ugly siblings</input>
+					</li>
+				</div>
+
+				<br/>
+
+				<input id="submit" type="submit" value="Submit" name="submit"/>
+				<!--
+					<input id="smart" type="submit" style="background-color: rgb(250, 50, 50);" value="50%"/>
+					<input id="smart" type="submit" style="background-color: rgb(0, 240, 50);" value="80%"/>
+				-->
+			</form>
+		</div>
+	</body>
+</html>
