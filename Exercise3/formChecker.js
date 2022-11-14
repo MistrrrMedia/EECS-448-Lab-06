@@ -20,7 +20,7 @@ function load()
             document.getElementById( "flash_quantity" ).value = 0;
             flash = 0;
         }
-        else if( isNaN( document.getElementById( "flash_quantity" ).value ) )
+        else if( document.getElementById( "flash_quantity" ).value == '' )
         {
             document.getElementById( "flash_quantity" ).value = 0;
             flash = 0;
@@ -42,7 +42,7 @@ function load()
             wallet = 0;
         }
 
-        else if( isNaN( document.getElementById( "wallet_quantity" ).value ) )
+        else if( document.getElementById( "wallet_quantity" ).value == '' )
         {
             document.getElementById( "wallet_quantity" ).value = 0;
             wallet = 0;
@@ -64,7 +64,7 @@ function load()
             nyquil = 0;
         }
 
-        else if( isNaN( document.getElementById( "nyquil_quantity" ).value ) )
+        else if( document.getElementById( "nyquil_quantity" ).value == '' )
         {
             document.getElementById( "nyquil_quantity" ).value = 0;
             nyquil = 0;
