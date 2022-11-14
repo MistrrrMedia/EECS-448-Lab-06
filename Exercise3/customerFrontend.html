@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Suspicious Goods</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="formChecker.js"></script>
+    </head>
+
+    <body onload="load()">
+        <form id="php_sucks" action="customerBackend.php" method="POST">
+            <div id="container">
+                <h1>Suspicious Goods – <i>they're good for you, good for your soul.</i></h1>
+
+                <div id="catalog_container">
+                    <div class="goods">
+                        <img src="Assets/ghetto_flash.jpeg">
+                        <h4 class="goods_title">Flash Drive I Found Exploring Ohio (Untested) – $29</h4>
+                        <p class="desc">There could be secrets. You might uncover hidden treasures. Discover. Learn. <b><i>Regret</i></b>.</p>
+                        <br><br>
+                        <div class="add">
+                            <p onclick="addFlash()">Add to cart</p>
+                            <input type="number" class="quantity" id="flash_quantity" value="0"></input>
+                        </div>
+                    </div>
+
+                    <div class="goods">
+                        <img src="Assets/wallet.jpeg">
+                        <h4 class="goods_title">Someone's Wallet – $35</h4><br>
+                        <p class="desc">Contents: Expired drivers license, someone else's credit card, Motel 6 room card. Be suspicious. <i><b>Entertain some blackmail–why don't you?</b></i></p>
+                        <br>
+                        <div class="add">
+                            <p onclick="addWallet()">Add to cart</p>
+                            <input type="number" class="quantity" id="wallet_quantity" value="0"></input>
+                        </div>
+                    </div>
+
+                    <div class="goods" id="remove_right_padding">
+                        <img src="Assets/offbrand_nyquil.jpeg">
+                        <h4 class="goods_title">Grandma's Unopened Cough Syrup (Significantly Aged) – $89</h4>
+                        <p class="desc">Refrigerate for a refreshing taste. Rid yourself of measurements and restrictions. Indulge. Quench your thirst. <b><i>Transcend into a new state of being</i></b>.</p>
+                        <br>
+                        <div class="add">
+                            <p onclick="addNyquil()">Add to cart</p>
+                            <input type="number" class="quantity" id="nyquil_quantity" value="0"></input>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="info">
+                    <div id="login">
+                        <input type="text" name="username" id="username" class="credentials" placeholder="your@email.whatever"></input>
+                        <input type="password" name="password" id="password" class="credentials" placeholder="password"></input>
+                    </div>
+                    
+                    <div id="shipping_container">
+                        <input type="radio" name="shipping" class="shipping" id="free_day">Free 7 Day</input><br>
+                        <input type="radio" name="shipping" class="shipping" id="three_day">$5.00 3 Days (You hate the Amazon guy)</input><br>
+                        <input type="radio" name="shipping" class="shipping" id="overnight">$50.00 Overnight (YOU WANT HIM DEAD)</input>
+                    </div>
+
+                    <div id="buttons">
+                        <p onclick="submitOrder()">Submit</p>
+                        <p onclick="window.location.reload()">Regret</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
