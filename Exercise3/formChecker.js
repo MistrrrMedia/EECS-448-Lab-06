@@ -115,4 +115,5 @@ function submitOrder()
     }
 
     if( credentialsCheck() && radioBool ) document.forms['php_sucks'].submit();
+    else alert("Hmm... something's not right.");
 }

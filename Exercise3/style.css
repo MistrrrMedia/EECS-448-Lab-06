@@ -29,6 +29,20 @@ h1, h2, h3, h4, h5, p
     margin: 0;
 }
 
+td
+{
+    background-color: white;
+    margin: 5px;
+    padding: 2px;
+    color: rgb(100, 03, 63)
+}
+
+code
+{
+    background-color: white;
+    color: rgb(100, 03, 63)
+}
+
 img
 {
     width: 300px;
@@ -40,6 +54,13 @@ img
 i
 {
     font-family: 'Times New Roman', Times, serif;
+}
+
+#overly_large_div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container
@@ -219,6 +240,24 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
 .alt_font
 {
     font-family:'Times New Roman', Times, serif;
+}
+
+#buttons
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons p
+{
+    padding: 10px;
+    width: 100px;
+    justify-content: center;
+    background-color: rgb(120, 23, 83);
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 @keyframes fade_from_bottom

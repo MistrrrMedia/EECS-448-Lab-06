@@ -20,7 +20,7 @@
                         <br><br>
                         <div class="add">
                             <p onclick="addFlash()">Add to cart</p>
-                            <input type="number" class="quantity" id="flash_quantity" value="0"></input>
+                            <input type="number" class="quantity" id="flash_quantity" name="flash_quantity" value="0"></input>
                         </div>
                     </div>
 
@@ -31,7 +31,7 @@
                         <br>
                         <div class="add">
                             <p onclick="addWallet()">Add to cart</p>
-                            <input type="number" class="quantity" id="wallet_quantity" value="0"></input>
+                            <input type="number" class="quantity" id="wallet_quantity" name="wallet_quantity" value="0"></input>
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@
                         <br>
                         <div class="add">
                             <p onclick="addNyquil()">Add to cart</p>
-                            <input type="number" class="quantity" id="nyquil_quantity" value="0"></input>
+                            <input type="number" class="quantity" id="nyquil_quantity" name="nyquil_quantity" value="0"></input>
                         </div>
                     </div>
                 </div>
@@ -56,14 +56,14 @@
                     </div>
                     
                     <div id="shipping_container">
-                        <input type="radio" name="shipping" class="shipping" id="free_day">Free 7 Day</input><br>
-                        <input type="radio" name="shipping" class="shipping" id="three_day">$5.00 3 Days (You hate the Amazon guy)</input><br>
-                        <input type="radio" name="shipping" class="shipping" id="overnight">$50.00 Overnight (YOU WANT HIM DEAD)</input>
+                        <input type="radio" name="shipping" class="shipping" id="free_day" value="0">Free 7-Day</input><br>
+                        <input type="radio" name="shipping" class="shipping" id="three_day" value="5">$5.00 3-Day (You hate the Amazon guy)</input><br>
+                        <input type="radio" name="shipping" class="shipping" id="overnight" value="50">$50.00 Overnight (YOU WANT HIM DEAD)</input>
                     </div>
 
                     <div id="buttons">
                         <p onclick="submitOrder()">Submit</p>
-                        <p onclick="window.location.reload()">Regret</p>
+                        <p onclick="window.location.reload()">Reset</p>
                     </div>
                 </div>
             </div>
