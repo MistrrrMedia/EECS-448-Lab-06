@@ -13,7 +13,7 @@
 				display: flex;
 				color: black;
 			    background-color: black;
-			    background-image: url(https://lh3.googleusercontent.com/2jfcSt_JaDKP40KdP5_w5jG4gqUBCi6ynGwCE09owx08GdNe_hkGyzCFVrOM7JLK3MmuTMxEUNWNYur6B864eVFO8Werq98SCwUvKJ7SJVD9geKQY2aei37kMGQ2s2YauKyGYABilmNGtzKPrG75xWk3zk674NFoRmhQuAN5nbOpLFSHNriPc9ZWSmjS6tCYBnnj5ngZGbKz2pAyp76dRAXIKZDPVLrOy5wc502NimWqEzfME8T-r2C3vf8aCojvlVcTfSqv63VaX2eZGgS89H2L8p3DNlywKBmyOLcz3N-TJX7K03GhlxFReTOF90yMF2g1SKZZFIo1IRThhvcXVb1a_MZosrGkQjoNgiNgud7P1WaCehBQnQQqfCVMhHj3knqj0giO4cAIjxqjirw_qHcQ0gTfkHNoau2WrqYzVpRcivCKheMAN1OE-xAdrwxAKjdqcYyxLj2AXEm32KlBUomjavCZhCVJ4r25sGpy6tnjdqL7c_KW2RBzw3zHkqfcZ6C5V6Bmd7FBCByOBpBMR34j9_wwHRtCs8T2iqzQcKp8TnJ-ZQ8h1fbqZBJlC-tTOrFxrAWG9gfEYZA5K2PfseumVzcQ7JKcbkn2VgUnrosdCB28qYNwle9TZ3nrQ-pMXDGZY5HkzLaKDcp6OzxbifiqenaBpvcQtIwNQi52OD8CV15RRvPxEHF9zVr5BcQoEDd-R_mObW-45PzmQmxYjdy8DKc3TjFbearI_JLW9YK21Kpw7hvBytcenbGIpBibn9EadTXn6FHlFFSgMO6Ti9bYEeY-rG0tgZbDiuCxeoSoeWrCvSe9RE7Vo6l7J_CNugSK1AtA7TmFDmQ_QxpjcvY7csM72U_F91reiagILvUWdDhej63lyvMKEjvuY0tWDIHTgfFjqArbnE7ueNoe81ATSx-hkdWw-SyTETtGXIVP=w3364-h2244-no?authuser=0);
+			    background-image: url("background-image.png");
 			    background-size: cover;
     			background-repeat: no-repeat;
     			background-attachment: fixed;
