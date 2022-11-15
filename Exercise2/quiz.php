@@ -153,7 +153,7 @@
 						}
 						if($_POST['q3'] == 4) 
 						{ 
-							echo("<p style=\"color: green\">Your Answer: derf");
+							echo("<p style=\"color: red\">Your Answer: derf");
 						}
 					?>
 				</div>
